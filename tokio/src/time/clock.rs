@@ -7,9 +7,9 @@
 //! configurable.
 
 
-#[cfg(not(all(target_family = "wasm")))]
+#[cfg(not(tokio_wasm_not_wasi))]
 use std::time::Instant as std_instant;
-#[cfg(all(target_family = "wasm"))]
+#[cfg(tokio_wasm_not_wasi)]
 use web_time::Instant as std_instant;
 
 cfg_not_test_util! {
