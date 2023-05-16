@@ -7,9 +7,9 @@
 //! configurable.
 
 
-#[cfg(not(tokio_wasm))]
-use std::time::Instant as std_instant;
-#[cfg(tokio_wasm)]
+//#[cfg(not(tokio_wasm))]
+//use std::time::Instant as std_instant;
+//#[cfg(tokio_wasm)]
 use web_time::Instant as std_instant;
 
 cfg_not_test_util! {

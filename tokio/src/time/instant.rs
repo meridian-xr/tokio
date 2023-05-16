@@ -3,9 +3,9 @@
 use std::fmt;
 use std::ops;
 use std::time::Duration;
-#[cfg(not(tokio_wasm))]
-use std::time::Instant as std_instant;
-#[cfg(tokio_wasm)]
+//#[cfg(not(tokio_wasm))]
+//use std::time::Instant as std_instant;
+//#[cfg(tokio_wasm)]
 use web_time::Instant as std_instant;
 
 /// A measurement of a monotonically nondecreasing clock.
