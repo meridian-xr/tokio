@@ -211,6 +211,7 @@ impl fmt::Debug for Instant {
 #[cfg(not(feature = "test-util"))]
 mod variant {
     use super::Instant;
+    use web_time::Instant as std_instant;
 
     pub(super) fn now() -> Instant {
         Instant::from_std(std_instant::now())
